@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminis Foundation — Decentralized AI for Ecological Sovereignty</title>
+    <meta name="description" content="Scientific research in decentralized artificial intelligence, environmental sustainability, and privacy-preserving digital systems. Northern New Mexico.">
+    <style>
+        /* ── Reset & Base ─────────────────────────────────────────── */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --sage: #5e7e5e;
+            --sage-dark: #3d5c3d;
+            --sage-light: #e8ede8;
+            --sandstone: #b8a88a;
+            --sandstone-light: #d9ceb8;
+            --sand-bg: #f7f5f0;
+            --cream: #fdfcf8;
+            --text: #2c2c2a;
+            --text-secondary: #5a5a56;
+            --text-light: #8a8a84;
+            --border: #e2ddd4;
+            --rule: #d0c9bc;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 17px;
+            line-height: 1.7;
+            color: var(--text);
+            background-color: var(--cream);
+        }
+
+        /* ── Typography ───────────────────────────────────────────── */
+        h1, h2, h3 {
+            font-weight: normal;
+            letter-spacing: 0.01em;
+        }
+
+        a {
+            color: var(--sage-dark);
+            text-decoration: none;
+            border-bottom: 1px solid var(--sandstone-light);
+            transition: border-color 0.2s ease;
+        }
+
+        a:hover {
+            border-bottom-color: var(--sage-dark);
+        }
+
+        /* ── Layout ───────────────────────────────────────────────── */
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        section {
+            padding: 56px 0;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--rule);
+            margin: 0;
+        }
+
+        /* ── Header ───────────────────────────────────────────────── */
+        header {
+            padding: 80px 0 64px;
+            text-align: center;
+            background: linear-gradient(180deg, var(--sage-light) 0%, var(--cream) 100%);
+        }
+
+        header h1 {
+            font-size: 2.4em;
+            color: var(--sage-dark);
+            letter-spacing: 0.04em;
+            margin-bottom: 14px;
+        }
+
+        header .tagline {
+            font-size: 1.05em;
+            color: var(--text-secondary);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 0.78em;
+            font-weight: 500;
+        }
+
+        /* ── Mission ──────────────────────────────────────────────── */
+        .mission p {
+            font-size: 1.05em;
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        .section-heading {
+            font-size: 0.72em;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--sage);
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        /* ── Research ─────────────────────────────────────────────── */
+        .paper-card {
+            background: var(--sand-bg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 32px 32px 28px;
+            margin-top: 8px;
+        }
+
+        .paper-card .label {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 0.68em;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+
+        .paper-card .paper-title {
+            font-size: 1.08em;
+            line-height: 1.5;
+            color: var(--text);
+            margin-bottom: 16px;
+        }
+
+        .paper-card .paper-description {
+            font-size: 0.92em;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+
+        .paper-card .doi {
+            font-family: 'Menlo', 'Consolas', 'Monaco', monospace;
+            font-size: 0.78em;
+            color: var(--sage-dark);
+        }
+
+        .paper-card .doi a {
+            border-bottom-color: var(--sandstone-light);
+        }
+
+        /* ── Projects ──────────────────────────────────────────────── */
+        .project-card {
+            background: var(--sand-bg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 32px 32px 28px;
+            margin-top: 8px;
+        }
+
+        .project-card .project-name {
+            font-size: 1.08em;
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+
+        .project-card .project-description {
+            font-size: 0.92em;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* ── Team ─────────────────────────────────────────────────── */
+        .team-member {
+            margin-top: 20px;
+        }
+
+        .team-member:first-child {
+            margin-top: 8px;
+        }
+
+        .team-member .name {
+            font-size: 1.05em;
+            color: var(--text);
+            margin-bottom: 2px;
+        }
+
+        .team-member .role {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 0.82em;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .team-member .email {
+            font-size: 0.88em;
+        }
+
+        /* ── Contact ──────────────────────────────────────────────── */
+        .contact p {
+            font-size: 0.95em;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .contact .email-primary {
+            font-size: 1.05em;
+        }
+
+        /* ── Footer ───────────────────────────────────────────────── */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            background: var(--sage-light);
+        }
+
+        footer p {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 0.75em;
+            color: var(--text-light);
+            letter-spacing: 0.04em;
+        }
+
+        /* ── Responsive ───────────────────────────────────────────── */
+        @media (max-width: 600px) {
+            header {
+                padding: 56px 0 48px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            section {
+                padding: 40px 0;
+            }
+
+            .paper-card,
+            .project-card {
+                padding: 24px 20px 22px;
+            }
+
+            body {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ── Header ──────────────────────────────────────────────────── -->
+    <header>
+        <div class="container">
+            <h1>Luminis Foundation</h1>
+            <p class="tagline">Decentralized AI for Ecological Sovereignty</p>
+        </div>
+    </header>
+
+    <hr class="divider">
+
+    <!-- ── Mission ─────────────────────────────────────────────────── -->
+    <section class="mission">
+        <div class="container">
+            <h2 class="section-heading">Mission</h2>
+            <p>
+                Luminis Foundation conducts scientific research in decentralized artificial intelligence,
+                environmental sustainability, and privacy-preserving digital systems. Our work is rooted
+                in the high-desert landscapes of Northern New Mexico, where we develop sovereign,
+                ecologically-situated computing systems whose identity and inference are grounded in
+                the biological state of a specific place&mdash;not dependent on cloud infrastructure.
+                We pursue the long-term well-being of humanity and the natural world through
+                public-benefit research and open knowledge.
+            </p>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── Research ────────────────────────────────────────────────── -->
+    <section class="research">
+        <div class="container">
+            <h2 class="section-heading">Research</h2>
+            <div class="paper-card">
+                <p class="label">Published Paper &middot; 2026</p>
+                <p class="paper-title">
+                    Bridging Mycelium-Inspired Decentralized Computing and Symbiotic
+                    Plant&ndash;Fungal&ndash;AI Bio-Hybrid Systems in Northern New Mexico&rsquo;s
+                    High-Desert Ecosystems
+                </p>
+                <p class="paper-description">
+                    A synthesis of fungal electrophysiology, mycorrhizal ecology, and edge-AI
+                    engineering proposing bio-hybrid sensor&ndash;AI systems organized in
+                    mycorrhizal-inspired topologies for persistent ecological monitoring in
+                    pi&ntilde;on&ndash;juniper woodlands.
+                </p>
+                <p class="doi">
+                    DOI: <a href="https://doi.org/10.5281/zenodo.20143391" target="_blank" rel="noopener">10.5281/zenodo.20143391</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── Projects ────────────────────────────────────────────────── -->
+    <section class="projects">
+        <div class="container">
+            <h2 class="section-heading">Projects</h2>
+            <div class="project-card">
+                <p class="project-name">MycoSense</p>
+                <p class="project-description">
+                    A real-time ecosystem health monitoring dashboard using electrode sensor
+                    arrays and bio-hybrid sensor systems. Developed for the PSUN Climate
+                    Tech / Solarpunk Hackathon, June 2026.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── Team ────────────────────────────────────────────────────── -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-heading">Team</h2>
+            <div class="team-member">
+                <p class="name">Carlos Garcia</p>
+                <p class="role">Research Director</p>
+                <p class="email"><a href="mailto:carlos@luminisfoundationresearch.org">carlos@luminisfoundationresearch.org</a></p>
+            </div>
+            <div class="team-member">
+                <p class="name">Guillermo Martin</p>
+                <p class="role">Secretary</p>
+            </div>
+            <div class="team-member">
+                <p class="name">Adam Kimble</p>
+                <p class="role">Treasurer</p>
+            </div>
+            <div class="team-member">
+                <p class="name">Sterling VanKuijk</p>
+                <p class="role">Vice President</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── Contact ─────────────────────────────────────────────────── -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-heading">Contact</h2>
+            <p>
+                For inquiries about our research, collaboration, or the Foundation:
+            </p>
+            <p class="email-primary">
+                <a href="mailto:carlos@luminisfoundationresearch.org">carlos@luminisfoundationresearch.org</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- ── Footer ──────────────────────────────────────────────────── -->
+    <footer>
+        <div class="container">
+            <p>Luminis Foundation &mdash; Northern New Mexico Nonprofit Corporation | 501(c)(3) Status Pending</p>
+        </div>
+    </footer>
+
+</body>
+</html>
