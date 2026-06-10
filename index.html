@@ -202,6 +202,35 @@
             line-height: 1.7;
         }
 
+        /* ── Foundation Status ─────────────────────────────────────── */
+        .status-list {
+            list-style: none;
+            margin-top: 8px;
+        }
+
+        .status-list li {
+            font-size: 0.95em;
+            color: var(--text);
+            line-height: 1.7;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .status-list li:last-child {
+            border-bottom: none;
+        }
+
+        .status-label {
+            color: var(--text-secondary);
+        }
+
+        .status-value {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 0.85em;
+            color: var(--text-light);
+            margin-left: 4px;
+        }
+
         /* ── Team ─────────────────────────────────────────────────── */
         .team-member {
             margin-top: 20px;
@@ -307,13 +336,14 @@
         <div class="container">
             <h2 class="section-heading">Mission</h2>
             <p>
-                Luminis Foundation conducts scientific research in decentralized artificial intelligence,
-                environmental sustainability, and privacy-preserving digital systems. Our work is rooted
-                in the high-desert landscapes of Northern New Mexico, where we develop sovereign,
-                ecologically-situated computing systems whose identity and inference are grounded in
-                the biological state of a specific place&mdash;not dependent on cloud infrastructure.
-                We pursue the long-term well-being of humanity and the natural world through
-                public-benefit research and open knowledge.
+                Luminis Foundation conducts scientific research at the intersection of decentralized
+                artificial intelligence, environmental sustainability, and privacy-preserving digital
+                systems&mdash;grounded in place: the Pecos watershed and high-desert ecosystems of
+                Northern New Mexico. We study how mycelial networks can inform the design of
+                decentralized computing systems. This is what we mean by sovereign, ecologically-situated
+                AI: intelligence that belongs to a place, serves its community, and doesn&rsquo;t depend
+                on centralized infrastructure to function. We pursue the long-term well-being of humanity
+                and the natural world through public-benefit research and open knowledge.
             </p>
         </div>
     </section>
@@ -363,6 +393,22 @@
 
     <hr class="divider">
 
+    <!-- ── Foundation Status ───────────────────────────────────────── -->
+    <section class="foundation-status">
+        <div class="container">
+            <h2 class="section-heading">Foundation Status</h2>
+            <ul class="status-list">
+                <li>NM Incorporation &#x2705; <span class="status-value">Complete (Entity ID 0008089293)</span></li>
+                <li>Foundational Paper Published &#x2705; <span class="status-value">DOI: <a href="https://doi.org/10.5281/zenodo.20143391" target="_blank" rel="noopener">10.5281/zenodo.20143391</a></span></li>
+                <li>Domain &#x2705; <span class="status-value"><a href="https://luminisfoundationresearch.org">luminisfoundationresearch.org</a></span></li>
+                <li>501(c)(3) Application &#x23F3; <span class="status-value">Pending</span></li>
+                <li>Field Deployment (Pecos Watershed) &#x1F4CB; <span class="status-value">Planning</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <hr class="divider">
+
     <!-- ── Team ────────────────────────────────────────────────────── -->
     <section class="team">
         <div class="container">
@@ -398,6 +444,15 @@
             </p>
             <p class="email-primary">
                 <a href="mailto:carlos@luminisfoundationresearch.org">carlos@luminisfoundationresearch.org</a>
+            </p>
+            <p class="email-primary">
+                <a href="mailto:adam@luminisfoundationresearch.org">adam@luminisfoundationresearch.org</a>
+            </p>
+            <p class="email-primary">
+                <a href="mailto:sterling@luminisfoundationresearch.org">sterling@luminisfoundationresearch.org</a>
+            </p>
+            <p style="margin-top: 20px;">
+                Open research repository: <a href="https://github.com/luminis-foundation/luminis-foundation-open" target="_blank" rel="noopener">github.com/luminis-foundation/luminis-foundation-open</a>
             </p>
         </div>
     </section>
