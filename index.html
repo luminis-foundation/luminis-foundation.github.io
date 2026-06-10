@@ -26,6 +26,7 @@
             --text-light: #8a8a84;
             --border: #e2ddd4;
             --rule: #d0c9bc;
+            --header-bg: #0d1f1a;
         }
 
         html {
@@ -74,23 +75,46 @@
             margin: 0;
         }
 
+        /* ── Hero Banner ──────────────────────────────────────────── */
+        .hero-banner {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+            background-color: var(--header-bg);
+        }
+
+        .hero-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         /* ── Header ───────────────────────────────────────────────── */
         header {
-            padding: 80px 0 64px;
+            padding: 48px 0 56px;
             text-align: center;
-            background: linear-gradient(180deg, var(--sage-light) 0%, var(--cream) 100%);
+            background-color: var(--header-bg);
+        }
+
+        .header-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 28px;
+            object-fit: cover;
         }
 
         header h1 {
             font-size: 2.4em;
-            color: var(--sage-dark);
+            color: #dcd4c4;
             letter-spacing: 0.04em;
             margin-bottom: 14px;
         }
 
         header .tagline {
-            font-size: 1.05em;
-            color: var(--text-secondary);
+            color: var(--sandstone);
             letter-spacing: 0.06em;
             text-transform: uppercase;
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -232,7 +256,13 @@
         /* ── Responsive ───────────────────────────────────────────── */
         @media (max-width: 600px) {
             header {
-                padding: 56px 0 48px;
+                padding: 36px 0 44px;
+            }
+
+            .header-logo {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 20px;
             }
 
             header h1 {
@@ -256,9 +286,15 @@
 </head>
 <body>
 
+    <!-- ── Hero Banner ─────────────────────────────────────────────── -->
+    <div class="hero-banner">
+        <img src="luminis-banner.jpg" alt="Luminis Foundation Research — Mycelium · AI · Ecosystems — Northern New Mexico">
+    </div>
+
     <!-- ── Header ──────────────────────────────────────────────────── -->
     <header>
         <div class="container">
+            <img class="header-logo" src="luminis-logo.jpg" alt="Luminis Foundation logo">
             <h1>Luminis Foundation</h1>
             <p class="tagline">Decentralized AI for Ecological Sovereignty</p>
         </div>
